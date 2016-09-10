@@ -42,36 +42,65 @@ namespace ProjectFortuneTeller
             
             if (userAge%2 == 0)
             {
-                Console.WriteLine("You will retire in 90 years.");
+                Console.WriteLine("will retire in 90 years");
             }
             else
             {
-                Console.WriteLine("You will retire in 25 years.");
+                Console.WriteLine("will retire in 25 years");
             }
 
             if (userSibling == 0)
             {
-                Console.WriteLine("You will have a vacation home in Italy.");
+                Console.WriteLine("a vacation home in Italy");
             }
             else if (userSibling == 1)
             {
-                Console.WriteLine("You will have a vacation home in Fiji.");
+                Console.WriteLine("a vacation home in Fiji");
             }
             else if (userSibling == 2)
             {
-                Console.WriteLine("You will have a vacation home in France.");
+                Console.WriteLine("a vacation home in France");
             }
             else if (userSibling == 3)
             {
-                Console.WriteLine("You will have a vacation home in Long Island.");
+                Console.WriteLine("a vacation home in Long Island");
             }
             else if (userSibling > 3)
             {
-                Console.WriteLine("You will have a vacation home in the Bahamas.");
+                Console.WriteLine("a vacation home in the Bahamas");
             }
             else if (userSibling <0)
             {
-                Console.WriteLine("You will have a vacation home in Siberia.");
+                Console.WriteLine("a vacation home in Siberia");
+            }
+
+            if (color.ToLower() == "red" || color.ToLower() == "r")
+            {
+                Console.WriteLine("a horse.");
+            }
+            else if (color.ToLower() == "orange" || color.ToLower() == "o")
+            {
+                Console.WriteLine("a helicopter.");
+            }
+            else if (color.ToLower() == "yellow" || color.ToLower() == "y")
+            {
+                Console.WriteLine("a donkey.");
+            }
+            else if (color.ToLower() == "green" || color.ToLower() == "g")
+            {
+                Console.WriteLine("a car.");
+            }
+            else if (color.ToLower() == "blue" || color.ToLower() == "b")
+            {
+                Console.WriteLine("a motorcycle.");
+            }
+            else if (color.ToLower() == "indigo" || color.ToLower() == "i")
+            {
+                Console.WriteLine("a boat.");
+            }
+            else if (color.ToLower() == "violet" || color.ToLower() == "v")
+            {
+                Console.WriteLine("a plane.");
             }
             Console.ReadKey();
         }

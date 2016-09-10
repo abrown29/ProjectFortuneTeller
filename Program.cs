@@ -32,13 +32,15 @@ namespace ProjectFortuneTeller
             {
                 Console.WriteLine("R is for red" + "\n" + "O is for orange" + "\n" + "Y is for yellow" + "\n" + "G is for green" + "\n" + "B is for blue" + "\n" + "I is for indigo" + "\n" + "V is for violet");
                 Console.WriteLine("Please enter your favorite color.");
+                color = Console.ReadLine();
             }
+            Console.WriteLine(color);
             Console.WriteLine("\n");
 
             Console.WriteLine("How many siblings do you have?");
             int userSibling = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
-
+            
             Console.ReadKey();
         }
     }

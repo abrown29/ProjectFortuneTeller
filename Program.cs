@@ -26,7 +26,7 @@ namespace ProjectFortuneTeller
             int birthMonth = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
 
-            Console.WriteLine("What is your favorite ROYGBIV color? Please enter \"Help\" to get a list of colors.");
+            Console.WriteLine("What is your favorite ROYGBIV color? \nPlease enter \"Help\" for a list of colors");
             string color = Console.ReadLine();
             if (color.ToLower() == "help")
             {
@@ -34,12 +34,21 @@ namespace ProjectFortuneTeller
                 Console.WriteLine("Please enter your favorite color.");
                 color = Console.ReadLine();
             }
-            Console.WriteLine(color);
             Console.WriteLine("\n");
 
             Console.WriteLine("How many siblings do you have?");
             int userSibling = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
+            
+            if (userAge%2 == 0)
+            {
+                Console.WriteLine("You will retire in 90 years.");
+            }
+            else
+            {
+                Console.WriteLine("You will retire in 25 years.");
+            }
+
             
             Console.ReadKey();
         }

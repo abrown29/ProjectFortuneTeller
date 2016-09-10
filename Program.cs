@@ -49,7 +49,30 @@ namespace ProjectFortuneTeller
                 Console.WriteLine("You will retire in 25 years.");
             }
 
-            
+            if (userSibling == 0)
+            {
+                Console.WriteLine("You will have a vacation home in Italy.");
+            }
+            else if (userSibling == 1)
+            {
+                Console.WriteLine("You will have a vacation home in Fiji.");
+            }
+            else if (userSibling == 2)
+            {
+                Console.WriteLine("You will have a vacation home in France.");
+            }
+            else if (userSibling == 3)
+            {
+                Console.WriteLine("You will have a vacation home in Long Island.");
+            }
+            else if (userSibling > 3)
+            {
+                Console.WriteLine("You will have a vacation home in the Bahamas.");
+            }
+            else if (userSibling <0)
+            {
+                Console.WriteLine("You will have a vacation home in Siberia.");
+            }
             Console.ReadKey();
         }
     }

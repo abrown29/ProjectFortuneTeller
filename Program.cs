@@ -102,6 +102,22 @@ namespace ProjectFortuneTeller
             {
                 Console.WriteLine("a plane.");
             }
+            if (birthMonth >= 1 && birthMonth <= 4)
+            {
+                Console.WriteLine(" with $100000 in the bank");
+            }
+            else if (birthMonth >=5 && birthMonth <=8)
+            {
+                Console.WriteLine("with $200000 in the bank");
+            }
+            else if (birthMonth >=9 && birthMonth <= 12)
+            {
+                Console.WriteLine("with $300000 in the bank");
+            }
+            else if (birthMonth <= 0 || birthMonth >= 12)
+            {
+                Console.WriteLine("with $0.00 in the bank");
+            }
             Console.ReadKey();
         }
     }

@@ -10,6 +10,9 @@ namespace ProjectFortuneTeller
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Let the Great Zucchini tell your future! Just answer a few simple questions...");
+            Console.WriteLine("\n");
+
             Console.WriteLine("What is your first name?");
             string firstName = Console.ReadLine();
             Console.WriteLine("\n");
@@ -39,85 +42,92 @@ namespace ProjectFortuneTeller
             Console.WriteLine("How many siblings do you have?");
             int userSibling = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
-            
+
+            string retire;
             if (userAge%2 == 0)
             {
-                Console.WriteLine("will retire in 90 years");
+                retire = " will retire in 90 years";
             }
             else
             {
-                Console.WriteLine("will retire in 25 years");
+                retire = " will retire in 25 years";
             }
 
+            string vacationHome = "a vacation home in";
             if (userSibling == 0)
             {
-                Console.WriteLine("a vacation home in Italy");
+                vacationHome = "a vacation home in Italy";
             }
             else if (userSibling == 1)
             {
-                Console.WriteLine("a vacation home in Fiji");
+                vacationHome = "a vacation home in Fiji";
             }
             else if (userSibling == 2)
             {
-                Console.WriteLine("a vacation home in France");
+                vacationHome = "a vacation home in France";
             }
             else if (userSibling == 3)
             {
-                Console.WriteLine("a vacation home in Long Island");
+                vacationHome = "a vacation home in Long Island";
             }
             else if (userSibling > 3)
             {
-                Console.WriteLine("a vacation home in the Bahamas");
+                vacationHome = "a vacation home in the Bahamas";
             }
             else if (userSibling <0)
             {
-                Console.WriteLine("a vacation home in Siberia");
+                vacationHome = "a vacation home in Siberia";
             }
 
+            string vehicle = "a";
             if (color.ToLower() == "red" || color.ToLower() == "r")
             {
-                Console.WriteLine("a horse.");
+                vehicle = "a horse.";
             }
             else if (color.ToLower() == "orange" || color.ToLower() == "o")
             {
-                Console.WriteLine("a helicopter.");
+                vehicle = "a helicopter.";
             }
             else if (color.ToLower() == "yellow" || color.ToLower() == "y")
             {
-                Console.WriteLine("a donkey.");
+                vehicle = "a donkey.";
             }
             else if (color.ToLower() == "green" || color.ToLower() == "g")
             {
-                Console.WriteLine("a car.");
+                vehicle = "a car.";
             }
             else if (color.ToLower() == "blue" || color.ToLower() == "b")
             {
-                Console.WriteLine("a motorcycle.");
+                vehicle = "a motorcycle.";
             }
             else if (color.ToLower() == "indigo" || color.ToLower() == "i")
             {
-                Console.WriteLine("a boat.");
+                vehicle = "a boat.";
             }
             else if (color.ToLower() == "violet" || color.ToLower() == "v")
             {
-                Console.WriteLine("a plane.");
+                vehicle = "a plane.";
             }
+
+            string money = "in bank";
             if (birthMonth >= 1 && birthMonth <= 4)
             {
-                Console.WriteLine(" with $100000 in the bank");
+                money = " with $100000 in the bank, ";
             }
             else if (birthMonth >=5 && birthMonth <=8)
             {
-                Console.WriteLine("with $200000 in the bank");
+                money = " with $200000 in the bank, ";
             }
             else if (birthMonth >=9 && birthMonth <= 12)
             {
-                Console.WriteLine("with $300000 in the bank");
+                money = " with $300000 in the bank, ";
             }
             else if (birthMonth <= 0 || birthMonth >= 12)
             {
-                Console.WriteLine("with $0.00 in the bank");
+                money = " with $0.00 in the bank, ";
             }
+
+            Console.WriteLine(firstName + " " + lastName + retire + money + "\n" + vacationHome + ", and " + vehicle);
             Console.ReadKey();
         }
     }
